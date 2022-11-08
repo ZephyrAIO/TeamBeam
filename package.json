@@ -1,0 +1,34 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "14.15.4",
+    "npm": "8.16.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js --ignore client",
+    "postinstall": "npm install --prefix client && npm run build --prefix client"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^4.6.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "mongoose": "^6.5.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.19",
+    "passport": "^0.5.3",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "save": "^2.5.0",
+    "session": "^0.1.0"
+  }
+}
